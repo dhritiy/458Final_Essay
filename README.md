@@ -9,21 +9,21 @@ Due to the coronavirus pandemic, the majority of the world has faced a big a shi
 
 Specifically, through this dashboard, NASA wanted to present changes that they saw in Water Quality, Air Quality, Landscapes, and Climate. In order to do so, NASA created 8-9 different thematic layer for each of these of these topics based on the data and statistics they were presenting.
 
-#### **Water Quality Layer:**
+#### ***Water Quality Layer:***
 ![Water Quality](https://github.com/dhritiy/458Final_Essay/blob/main/img/Water%20Quality.PNG?raw=true)
 *Caption:* In this layer, NASA is examing the levels of Chlorophyll-a in the waters in Chesapeake Bay. This chemical is an indicator of algae growth and a darker red color was used to represent areas with more growth and worse water quality. The darker bluer represents areas with less growth.  Since Chesapeake bay is often affected by human activities this could potentially be an increase in water quality because of pandemic related shifts.
 
-#### **Air Quality Layer:**
+#### ***Air Quality Layer:***
 ![Air Quality](https://github.com/dhritiy/458Final_Essay/blob/main/img/Air%20Quality.PNG?raw=true)
 *Caption:* In this layer, NASA aims to examine the imapct of Covid-19 on Air Quality around the world. There are many areas around eastern USA and Europe that have blue overlaid indicating a decrease in Nitrogen Dioxide levels. NASA was able to use this layer to hypothesize as people transitioned to remote working, the quanity of air pollutants emmitted drastically decreased, thus increase air quality.
 
 
-#### **Changing Landscapes Layer:**
+#### ***Changing Landscapes Layer:***
 ![Changing Landscapes](https://github.com/dhritiy/458Final_Essay/blob/main/img/Changing%20Land%20Scapes.PNG?raw=true)
 *Caption:* One of the most intersting layer that NASA presented was through the use od their High Definition Nightlights dataset. This data contains information of how much light is emmitted from a variety of different energy sources and uses. As people began to travel, shop, eat out, and socialize less, there were much fewer nightlights. The darker purple and pick areas represent a lower amount of nightlights, where as yellow areas present an increase.
 
 
-#### **Climate Change Layer:**
+#### ***Climate Change Layer:***
 ![Climate Change](https://github.com/dhritiy/458Final_Essay/blob/main/img/Climate%20Change.PNG?raw=true)
 *Caption:* NASA was able to use a similar thematic and base map as they used in the Air Quality layer to present a new idea in the climate change layer. Here they analyzed the decrease and increase in carbon dioxide levels at a global scale. Which most of Asia and the west is blue and saw lower CO2 levels, the area around Austalia was a dark red. This area actually saw an increase in carbon dioxide levels due the wildfires that swept through Australia towards the end of 2019.
 
@@ -53,7 +53,7 @@ In order to manage the data flow and set up the environment for the wbe page NAS
 One of the intersting things with data flow here is that the dashboard uses livereload. As NASA collects live data and inputs it into its database, that data is then processed and presented to the client on the smart dashboard. The website that hosts this dashboard makes use of http://localhost:9000/. Then whenever the system notices a change in the data files or executes a new task, the webpage will refresh.
 
 
-#### **UI/UX and Web Mapping Critique**
+### **UI/UX and Web Mapping Critique**
 #### ***Pros:***
 Descripe basemap, thematic layer, and interactive features:
 One thing that really stood out as a positive for this dashboard was NASA's use of different basemaps for different thematic layers. Often times, creators of smart dashboards will use the same basemap in all of the web maps they are presenting. However, NASA used a variety of basemaps. For example, in some web maps they used a Grayscale basemap which allowed the reader to be able to clearly see the data NASA was presenting. They did this mainly when they were presenting a choropleth or density thematic layer. In others, where it was important to understand the urban geography of the region, NASA used a Satellite basemap. By doing so they were able to present their narrative in an informative way and still allow the viewer to easily and quickable comprehend the data.
@@ -65,7 +65,26 @@ One critique, I have for this dashboard is the way in which climate change indic
 
 Additionally, another con I see with this map is that there is no search bar. This make it hard for the user to navigate through the dashboard or web maps to find the topic that they are looking for. If the user could type in a location on climate change indicator they are intersested in and immediately see all of the places this smart dashboard writes about that topic, they would be much more inclined to use it.
 
-**Indicator Dashboard:**
+***Indicator Dashboard:***
 ![Climate Change](https://github.com/dhritiy/458Final_Essay/blob/main/img/Critique.PNG?raw=true)
 
-#### **Connection to Social Theories:**
+### **Connection to Social Theories:**
+This smart dashboard connected very well with the article by Joel Shapiro, [*3 Ways Data Dahboards Can Mislead You*](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#). In his work, Shaprio explains what he calls the "Causality Trap". Essentially when a viewer sees two attributes being compared and linked with anothed on a dashboard, they tend to assume causality in between both. While there may be a correlation between the data they are viewing, there is a high chance that they can mistake correlation for causation.
+
+This is related directly to the NASA dashboard, because just from looking at the first few web maps and dashboards, the average viewer may likely assume that the pandemic had a positive impact on climate change. However, once they actualy scroll through severl on the web maps and read the insights NASA makes sure to point out that some climate indicators cannot be attributed to human changes in activity. While they do share this information, it is not readily available on the main page or even the first few dashboards the viewer is likely to click through. Therefore, if the viewer is a casual reader and just spends a small amount of time on the smart dashboard, they are likely to fall for the "Casuality Trap".
+
+Furthermore, the digital divide can also have an impact on people who use this dashboard for research purposes. For example, when you read through the open source code and github repository for this web site, you are able to see that this dashboard is not complete and refreshes automatically. However, due the gap in access to technology, many people may not be aware that they have to read and understand such background information. Therefore, if a student without much access to technology was to go to the library, access this smart dashboard, and use it as the basis for their research they may present incorrect information. Chances are the data the student collected and the analysis they read has likely changed and their intial data gathering could now be false.
+
+While the NASA Earthdata COVID-19 dashboard is a very informative and useful resource, I would urge that a user view it a live document. They must understand that it is live and updates and refreshes on its own. They must also make sure to note that they take the data at face value and can attempt to make and find correlations, but cannot use it to prove causation.
+
+
+**Author:** Dhriti Yandapally
+**Professor:** Bo Zhao
+**Class:** GEOG 458
+**Date:** 12th March, 2021
+
+
+### **References:**
+\* Dashboard: https://earthdata.nasa.gov/covid19/
+\* Dashboard GitHub Repository: https://github.com/NASA-IMPACT/covid-dashboard
+\* Class Reading: https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#
